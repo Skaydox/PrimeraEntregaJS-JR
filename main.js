@@ -6,7 +6,7 @@ let dineroProducto = 0
 
 function comprarProducto(){
     if(dinero >= dineroProducto){
-        let confirmar = confirm("¿Comprar por "+dineroProducto+" ?\Tenes: "+dinero)
+        let confirmar = confirm("¿Comprar por "+dineroProducto+" ? | Tenes: "+dinero)
         if(confirmar){
         dinero -= dineroProducto
         alert("¡Gracias por comprar! :)\nDinero disponible: "+dinero)
