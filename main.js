@@ -21,7 +21,7 @@ function comprarProducto(){
 alert("¡Vendemos varios electrodomésticos!")
 
 while(comprar) {
-let producto = parseInt(prompt("¿Que queres comprar? (Elige un el número)\nTenes "+dinero+" pesos\n\n(1) Heladera 150.000$\n(2) Cocina 95.000$\n(3) Lavarropas 75.000$\n\n(4) Salir"))
+let producto = parseInt(prompt("¿Que queres comprar? (Elige un número)\nTenes "+dinero+" pesos\n\n(1) Heladera 150.000$\n(2) Cocina 95.000$\n(3) Lavarropas 75.000$\n\n(4) Salir"))
 
 if((producto === 1) || (producto === 2) || (producto === 3) || (producto === 4)){
         if(producto == 1){dineroProducto=150000 ;seguir=true}
