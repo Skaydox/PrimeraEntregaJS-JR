@@ -21,11 +21,11 @@ function comprarProducto(){
 alert("¡Vendemos varios electrodomésticos!")
 
 while(comprar) {
-let producto = parseInt(prompt("¿Que queres comprar? (Elige un número)\nTenes "+dinero+" pesos\n\n(1) Heladera 150.000$\n(2) Cocina 95.000$\n(3) Lavarropas 75.000$\n\n(4) Salir"))
+let producto = parseInt(prompt("¿Que queres comprar? (Elige un número)\nTenes "+dinero+" pesos\n\n(1) Heladera 175.000$\n(2) Cocina 90.000$\n(3) Lavarropas 75.000$\n\n(4) Salir"))
 
 if((producto === 1) || (producto === 2) || (producto === 3) || (producto === 4)){
-        if(producto == 1){dineroProducto=150000 ;seguir=true}
-        if(producto == 2){dineroProducto=95000 ;seguir=true}
+        if(producto == 1){dineroProducto=175000 ;seguir=true}
+        if(producto == 2){dineroProducto=90000 ;seguir=true}
         if(producto == 3){dineroProducto=75000 ;seguir=true}
         if(producto == 4){comprar = false}
         }else{
@@ -35,7 +35,7 @@ if((producto === 1) || (producto === 2) || (producto === 3) || (producto === 4))
         if(seguir){
             let pagar = parseInt(prompt("¿Que medios de pago vas a usar?\n\n(1) Tarjeta (Hasta 6 cuotas sin interes)\n(2) Efectivo"))
             if(pagar === 1) {
-                let cuotas = parseFloat(prompt("¿En cuantas cuotas lo vas a querer pagar?\nTenes: "+dinero+"\n\n(1) 1 cuota: "+dineroProducto+"\n(2) 2 cuotas: "+dineroProducto/2+"\n(3) 3 cuotas: "+dineroProducto+"\n(4) 4 cuotas: "+dineroProducto/4+"\n(5) 5 cuotas: "+dineroProducto/5+"\n(6) 6 cuotas: "+dineroProducto/6))
+                let cuotas = parseInt(prompt("¿En cuantas cuotas lo vas a querer pagar?\nTenes: "+dinero+"\n\n(1) 1 cuota: "+dineroProducto+"\n(2) 2 cuotas: "+dineroProducto/2+"\n(3) 3 cuotas: "+dineroProducto+"\n(4) 4 cuotas: "+dineroProducto/4+"\n(5) 5 cuotas: "+dineroProducto/5+"\n(6) 6 cuotas: "+dineroProducto/6))
                 switch(cuotas){
                     case 1:
                         dineroProducto = dineroProducto/1
